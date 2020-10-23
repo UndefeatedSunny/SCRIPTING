@@ -3,7 +3,9 @@
 ##                                                               CONTAIN BASIC COMMANDS
                                       
                                       touch 
-                                      cat 
+                                      (cat , tac)
                                       pwd 
                                       (gedit , vim) 
+                                      /
+                                      ~/
  
