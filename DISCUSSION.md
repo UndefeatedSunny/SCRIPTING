@@ -70,3 +70,7 @@
 
     As an overview, xargs basically takes a list and passes the arguments as an stdin.
    
+## parantheses to group the ranges
+
+    find . \( -size +1c -a -size -3c \) -o \( -size +4c -a -size -200c \)
+
