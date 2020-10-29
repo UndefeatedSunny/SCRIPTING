@@ -53,7 +53,9 @@
 
     \;
     Is just a command separator (like we use on the shell to execute multiple commands one after the other)
+    
 ##  Why have we used command separator in the end if we are writing find command and then rm command
+
     The -exec switch will assume everything written before \; as an argument to the command and hence, it's important to notify the end of this command using this separator \;
     
 ##  IN CASE OF PIPE OPERATOR :-
@@ -70,7 +72,13 @@
 
     As an overview, xargs basically takes a list and passes the arguments as an stdin.
    
-## parantheses to group the ranges
+##  parantheses to group the ranges
 
     find . \( -size +1c -a -size -3c \) -o \( -size +4c -a -size -200c \)
+    
+## 3.) wildcard in tar command ?
+
+    *,?,[]
+    
+## 4.)
 
