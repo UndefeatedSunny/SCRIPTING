@@ -1,6 +1,6 @@
  ##                                       DAY 3
 
-## 1.) Built-in command don't have any binary file associated with them but Non-Built-in does ,what does it Signifies?
+## 1.) Built-in command don't have any binary file associated with them but Non-Built-in does?
 
     built-in commands are shell-specific i.e., they have their definition inside the binary of the shell itself and hence, 
     don't need a separate executable code/binaries.
