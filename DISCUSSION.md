@@ -82,4 +82,40 @@
     
     In linux, there are only these 3 main wild cards.
     Further, you will study some more meta-characters that are used for pattern matching when regular expressions will be covered.
+    
+## 4.) Facts on rm -R command
+
+    -R switch is just for deleting the dirs and their contents recursively.
+    
+    When a write-protected file is deleted, a prompt appears for the confirmation irrespective of the -R switch.
+
+    In other cases, the file will he deleted without seeking any confirmation from the user.
+    
+    If you want to force delete these files, you may use -f switch to ignore the prompt for write-protected files
+    
+## 5.) Join Command Problem -_- : 
+
+    f1:	f2: 
+    A 1	A 1 1
+    b 2	B 2 2
+    C 3	C 3 3
+
+    then on executing the command -> join f1 f2 
+    the output should be merging only till the place where the contents are same, ie till the 1st row as told in the class.
+    But I'm getting the output with the 1st row and 3rd row contents, i.e,
+    o/p:-
+    A 1 1 1
+    C 3 3 3
+    
+    SOLUTION :-
+    
+    join - join lines of two files on a common field
+
+    And in the description, you may find:
+    For each pair of input lines with identical join fields, write a line to stdout. The default join field is the first....
+
+    Hence, as you can see in your files,
+    The first field in the second lines don't match and hence, that line us ignored OR it skips the unmatched field.
+
+    The output is produced only for the lines having identical join fields (first field by default)
 
