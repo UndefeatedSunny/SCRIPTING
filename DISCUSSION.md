@@ -1,11 +1,11 @@
  ##                                       DAY 3
 
-1.) Built-in command don't have any binary file associated with them but Non-Built-in does ,what does it Signifies?
+## 1.) Built-in command don't have any binary file associated with them but Non-Built-in does ,what does it Signifies?
 
     built-in commands are shell-specific i.e., they have their definition inside the binary of the shell itself and hence, 
     don't need a separate executable code/binaries.
     
-2.) What is the role of -exec switch, Can we use it anywhere else like we use it in removing files having same pattern ?
+## 2.) What is the role of -exec switch, Can we use it anywhere else like we use it in removing files having same pattern ?
 
     So, -exec switch in find command is used to execute some command on the file/dir found by the find command.
 
