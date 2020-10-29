@@ -52,7 +52,7 @@
     \;
     Is just a command separator (like we use on the shell to execute multiple commands one after the other)
     
-    IN CASE OF PIPE OPERATOR :-
+##    IN CASE OF PIPE OPERATOR :-
     
     Similar to that but the pipe operator takes the complete stdout to the next command as an stdin.
 
