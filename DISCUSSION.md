@@ -36,6 +36,8 @@
     We have written an "rm" command only.
     {}
     Will act like a placeholder for the files being returned by the find command.
+    
+    Placeholders will just get replaced by the filenames being processed by the find command one by one.
 
     So, in first iteration, the find command will give "./file" to the rm command hence, the command will be:
 
@@ -51,8 +53,10 @@
 
     \;
     Is just a command separator (like we use on the shell to execute multiple commands one after the other)
+##  Why have we used command separator in the end if we are writing find command and then rm command
+    The -exec switch will assume everything written before \; as an argument to the command and hence, it's important to notify the end of this command using this separator \;
     
-##    IN CASE OF PIPE OPERATOR :-
+##  IN CASE OF PIPE OPERATOR :-
     
     Similar to that but the pipe operator takes the complete stdout to the next command as an stdin.
 
@@ -65,3 +69,4 @@
     And as we can see, it is a list of files and to operate on this list, we may have to use xargs command (should be covered in class).
 
     As an overview, xargs basically takes a list and passes the arguments as an stdin.
+   
