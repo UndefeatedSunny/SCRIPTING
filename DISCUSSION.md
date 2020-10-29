@@ -51,3 +51,17 @@
 
     \;
     Is just a command separator (like we use on the shell to execute multiple commands one after the other)
+    
+    IN CASE OF PIPE OPERATOR :-
+    
+    Similar to that but the pipe operator takes the complete stdout to the next command as an stdin.
+
+    Here, if you use pipe operator, the next command will receive
+    ./file
+    ./file1
+    ./file2
+    As stdin.
+
+    And as we can see, it is a list of files and to operate on this list, we may have to use xargs command (should be covered in class).
+
+    As an overview, xargs basically takes a list and passes the arguments as an stdin.
