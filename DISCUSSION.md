@@ -80,5 +80,6 @@
 
     *,?,[]
     
-## 4.)
+    In linux, there are only these 3 main wild cards.
+    Further, you will study some more meta-characters that are used for pattern matching when regular expressions will be covered.
 
