@@ -117,8 +117,40 @@ https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-direct
 
     Hence, in this case, source_link will be created as a directory which will be copy of the directory source.
 
-## 10) 
+## 10) MAN & HELP 
 
+    Man: displays the manual of a command in an interactive way. You can search for keywords inside the manual page and when done, 
+    exit the manual page using q.
+    Also, it shows the general information regarding a command like name, synopsis, description, author, documentation links, etc. 
+    (Basically like a reference manual)
 
+    Help: prints the related information about the command on the shell itself. i.e., prints everything at once 
+    and gives the control of the terminal back. You can't search for a keyword or interact in this case.
+    Help gives a brief info about the command and it's switches.
 
+    Also, help is a bash command (limited to bash shell) and manual is a linux command.
+
+## 11) FACT on soft link 
+
+    They aren't loyal to the original file.
+
+    For example:
+
+    Say I have a file f1 in CWD, and i create a soft link like:
+
+    ln -s f1 f1_soft,
+
+    And now, if I try to move this soft link to some other directory,
+
+    2 things can happen:
+
+    1) if the new directory doesn't have a file named f1, this link will be broken
+
+    2) if there's a file f1 in the new directory, this soft link will start pointing to that file since it only has the path "f1" inside it.
+
+    That's why it's advisable to use absolute paths while creating soft links
+    
+## 12) ANSI-C Quoting
+
+https://www.gnu.org/software/bash/manual/html_node/ANSI_002dC-Quoting.html
 
