@@ -23,8 +23,8 @@
 
 
 
-    Umask is actually used to disable the permissions so, the bits set in the octal number given as mask to umask will actually represent the permissions to be disabled.
-     (That's why we typically subtract that value from 666).
+    Umask is actually used to disable the permissions so, the bits set in the octal number given as mask to umask will actually 
+    represent the permissions to be disabled.(That's why we typically subtract that value from 666).
 
     But in some cases, (like one discussed above) this subtraction seems to yield incorrect results.
 
