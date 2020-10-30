@@ -100,7 +100,11 @@
     But you may notice while accessing the directory you don't need to start with '.  LIKE THAT -->> 'pine 1'
 
     As a general practice, please avoid using spaces while naming files/dirs. (PLEASE NOTE THAT POINT)
-## REASON (why not prefer)
+## REASON (why not prefer) -> 
+Command
+cd pine 1
+
+Error
 bash: cd: too many arguments
 ## SOLUTION
     cd pine\ 1     
