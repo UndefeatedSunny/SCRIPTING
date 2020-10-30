@@ -62,7 +62,42 @@ EXPLANATION :-
 
     Hence, if you try to modify permissions of the hard link, you are actually modifying the permissions of that memory location and now, 
     these changes will be reflected in all other hard links as well as the original file.
+   
+## 6) we know soft link contain path.....if we create a soft link of a file....then create another soft link of that soft link...and make 2-3 soft link....sir if we delete any soft link in between will it show the path to file???
     
+    Let's say we have a file f1.
+
+    We create a soft link to this file f1_soft
+
+    Then, we create another soft link to this f1_soft as f1_soft_soft.
+
+    Now the hierarchy will be: (as will be the output of ls -l)
+    f1_soft -> f1
+    f1_soft_soft -> f1_soft
+
+    Now if we delete f1_soft, the link f1_soft_soft -> f1_soft will become broken (will be highlighted by red colour in ls -l)   
+    CONCLUSION -->>
+    Hierarchy will get break...
     
-    
-    
+## 7) Why are hard links not allowed for directories?
+
+    https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-directories#:~:text=The%20reason%20hard-linking%20directories,ln%20-s%20target%20link%20
+
+## 8) Extension not matters, Linux automatically Recognized it.
+    In linux,
+    There's no such thing as extensions of a file.
+
+    For example:
+    touch f1 and touch f1.txt
+    Will create regular files and "f1" and "f1.txt" are  names of those files.
+
+
+
+
+
+
+
+
+
+
+
