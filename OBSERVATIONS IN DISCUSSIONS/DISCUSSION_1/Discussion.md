@@ -38,3 +38,41 @@
     > of multiple line command"
 
     This will come in handy when you will start writing scripts containing long commands to make it look more organized and understandable.
+    
+## 4.) We already know that everything in our system is located in Root directory. So, Can we change our user/owner name like we can do in Windows ?
+
+    You can change the username like this:-
+
+    usermod -l new_name old_name
+
+    usermod does not require any permission as you're just changing the login-name for your system.
+
+## Can we also change the machine name too?
+    
+    Yes but for that, you will need sudo permissions and we generally avoid to do it as it may break your system.
+    
+    There are files:
+    /etc/hostname
+
+    And 
+    /etc/hosts
+
+    Where we need to change the hostname.
+    
+## 5.) What is the difference between $ and :/home$ and :~$     
+
+    $ is a special character used to extract values from the variables.
+
+    In the command prompt, $ represents the bash shell and hence,
+
+    :/home$ means current working directory is /home and current shell is bash.
+
+    AND
+
+    :~$ means current working directory is home and the shell is bash shell.
+    
+    
+    
+    
+    
+    
