@@ -101,10 +101,10 @@
 
     As a general practice, please avoid using spaces while naming files/dirs. (PLEASE NOTE THAT POINT)
 ## REASON (why not prefer) -> 
-Command
+Command -> 
 cd pine 1
 
-Error
+Error -> 
 bash: cd: too many arguments
 ## SOLUTION
     cd pine\ 1     
