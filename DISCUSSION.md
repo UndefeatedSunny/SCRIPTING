@@ -76,6 +76,21 @@
 
     find . \( -size +1c -a -size -3c \) -o \( -size +4c -a -size -200c \)
     
+## ALIAS
+
+    this shows that the ls command is aliased to that command being displayed.
+
+    Aliases are mere shortcuts for long commands.
+    For example, the following command creates an alias:
+
+    alias long_list='ls -l'
+
+    Now, if you do:
+    Which long_list, it will give that alias statement and also, running long_list on the shell will invoke "ls -l" command.
+
+    Seems like you have ls command aliased by default. This is typically done by defining alias inside ~/.bashrc file.
+    so that everytime you open a new session, all your aliases are defined.
+    
 ## 3.) wildcard in tar command ?
 
     *,?,[]
