@@ -91,12 +91,33 @@ https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-direct
     touch f1 and touch f1.txt
     Will create regular files and "f1" and "f1.txt" are  names of those files.
 
+## 9) We make soft link using ln -s command in case of directory While using cp -s working fine for file but not working in case of directory.
 
+    Possible reason:
 
+    When cp operates on a directory, -r switch is required to perform copy operation recursively i.e., 
+    copy each and everything from source dir to destination dir.
+    Now, if we try to creat soft links alongwith using -r, it would mean we are creating soft links recursively. 
+    (for each sub dir as well as file inside the source dir) as well which shouldn't be allowed.
+    
+    As an example:
 
+    Directory source has contents:
 
+    files: f1, f2
+    Dirs: d1, d2
 
+    Now if we try to do the same (use -r and -s together):
 
+    cp -rs source source_link
+
+    What it will represent:
+    Create a soft link source_link for the directory source recursively i.e., create soft links for f1, f2, d1 and d2 inside source_link 
+    (not possible because source_link is a soft link and not a directory which can actually contain something)
+
+    Hence, in this case, source_link will be created as a directory which will be copy of the directory source.
+
+## 10) 
 
 
 
