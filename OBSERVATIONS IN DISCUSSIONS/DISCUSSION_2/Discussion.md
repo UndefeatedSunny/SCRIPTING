@@ -55,7 +55,8 @@ EXPLANATION :-
     and not those of the soft link itself.
     
     HARD LINK -->>
-    A hard link is like an actual copy of the file except for the fact that it has the same inode number (implying it points to the same memory location).
+    A hard link is like an actual copy of the file except for the fact that it has the same inode number,
+    (implying it points to the same memory location).
 
     We can say a hard link is just another name for the same file.
 
