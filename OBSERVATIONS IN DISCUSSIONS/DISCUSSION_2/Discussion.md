@@ -81,7 +81,7 @@ EXPLANATION :-
     
 ## 7) Why are hard links not allowed for directories?
 
-    https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-directories#:~:text=The%20reason%20hard-linking%20directories,ln%20-s%20target%20link%20
+https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-directories#:~:text=The%20reason%20hard-linking%20directories,ln%20-s%20target%20link%20
 
 ## 8) Extension not matters, Linux automatically Recognized it.
     In linux,
