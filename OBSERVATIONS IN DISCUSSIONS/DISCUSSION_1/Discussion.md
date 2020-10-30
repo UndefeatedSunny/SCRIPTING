@@ -71,8 +71,42 @@
 
     :~$ means current working directory is home and the shell is bash shell.
     
+## 6.) What is the difference between echo and cat?
+
+    echo is used to print the string on the terminal but cat prints the contents of the file which we give it as argument.
+    
+## 7.) Why do we limit the default file creation permissions on 666?
+    
+    There are 2 reasons behind this:
+
+    1) we can't let any arbitrary file have the execute permissions by default as it can put the security of the system at risk.
+    Since a virus or malware-related file can get executed by mistake and result in system-corruption.
+
+    2) most files don't need to be executable and hence, we can selectively choose what files we need to make executable.
+    
+## 8.) Want to make a folder named "pine 1" but when i use mkdir pine 1 it takes pine and 1 as different arguments
+
+    Space isn't allowed as a valid character while naming files/dirs.
+    
+    The reason allowed is in bold is because it's not advisable to do so but we can do it.
+
+    You can try:
+    mkdir "pine 1"
+
+    Or
+
+    mkdir pine\ 1
+
+    As a general practice, please avoid using spaces while naming files/dirs. (PLEASE NOTE THAT POINT)
+## REASON 
+bash: cd: too many arguments
+## SOLUTION
+    cd 1\ 2     
     
     
     
     
+    
+    
+
     
