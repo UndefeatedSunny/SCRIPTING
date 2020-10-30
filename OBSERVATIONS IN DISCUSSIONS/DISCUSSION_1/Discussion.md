@@ -96,12 +96,14 @@
     Or
 
     mkdir pine\ 1
+    
+    But you may notice while accessing the directory you don't need to start with '.  LIKE THAT -->> 'pine 1'
 
     As a general practice, please avoid using spaces while naming files/dirs. (PLEASE NOTE THAT POINT)
-## REASON 
+## REASON (why not prefer)
 bash: cd: too many arguments
 ## SOLUTION
-    cd 1\ 2     
+    cd pine\ 1     
     
     
     
