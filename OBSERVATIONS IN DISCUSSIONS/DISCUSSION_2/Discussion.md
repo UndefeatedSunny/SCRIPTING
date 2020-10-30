@@ -14,8 +14,8 @@ EXPLANATION :-
     (based on the file system) that's why you'll always see stat command printing the blocks twice the number being displayed by 
     ls -s command.
 
-    Next, the IO Block in the stat command shows the fundamental block size (memory) to be read or written at once (as per 
-    the file system). Currently, the default file system in linux is NFS which allocates 4096 bytes (4KB) as the IO Block size.
+    Next, the IO Block in the stat command shows the fundamental block size (memory) to be read or written at once (as per the
+    file system). Currently, the default file system in linux is ext2/ext3 which allocates 4096 bytes (4KB) as the IO Block size.
 
     2) Birth in the stat command ideally shows the file creation time but it's not applicable in linux that's why we see 
     a hyphen '-' in that section.
