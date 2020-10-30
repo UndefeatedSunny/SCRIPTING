@@ -132,4 +132,11 @@
     join: File1:3: is not sorted: c 3
     
     EXPLANATION :-
+    
     For Join Command field must be sorted but here 4 is coming before 3,So,It is only goes to 1  and then field is not sorted so it is printing error.
+    
+    If you see the manual of the join command, there's an important note mentioned over there:
+
+    FILE1 and FILE2 must be sorted on the join fields......
+    In this case you are using 2nd field from both file1 and file2 but in file1, the join fields are not in sorted order and 
+    hence, a warning is printed when 3 is encountered after 4.
