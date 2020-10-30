@@ -119,3 +119,17 @@
 
     The output is produced only for the lines having identical join fields (first field by default)
 
+##  NEW PROBLEM ARISES 
+    
+    f1:	f2: 
+    a 1	A 1
+    b 4	B 2
+    c 3	C 3
+    
+    join -1 2 -2 2 f1 f2
+    
+    1 a A
+    join: File1:3: is not sorted: c 3
+    
+    EXPLANATION :-
+    For Join Command field must be sorted but here 4 is coming before 3,So,It is only goes to 1  and then field is not sorted so it is printing error.
