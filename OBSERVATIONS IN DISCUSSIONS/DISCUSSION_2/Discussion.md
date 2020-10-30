@@ -19,3 +19,12 @@ EXPLANATION :-
 
     2) Birth in the stat command ideally shows the file creation time but it's not applicable in linux that's why we see 
     a hyphen '-' in that section.
+    
+## 3) How can we display file/directory creation time and is it different from any of time stamps i.e. access time, modification time or change time ?
+
+    In linux, the creation time isn't stored.
+    But linux only allows keeping traces of modification, access and change time.
+    This may also depend on the file system being used.
+    Some file systems allow to keep a trace of file creation time while others don't.
+
+    "is it different from any of the time stamps": yes it is as the name suggests it's the time your file is created.
